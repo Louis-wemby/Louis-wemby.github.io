@@ -63,7 +63,7 @@ social:
 favicon: /img/favicon.ico
 
 avatar:
-  img: /img/avatar.png
+  img: /img/avatar.jpg
   effect: false
 
 # Disable all banner images
@@ -73,7 +73,7 @@ disable_top_img: false
 default_top_img:
 
 # The banner image of index page
-index_img: /img/index-banner.png
+index_img: /img/index-banner.jpg
 
 # The banner image of archive page
 archive_img:
