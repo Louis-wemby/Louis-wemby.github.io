@@ -104,4 +104,4 @@ theme: butterfly
 deploy:
   type: git
   repo: https://github.com/Louis-wemby/Louis-wemby.github.io.git
-  branch: main
+  branch: gh-pages
