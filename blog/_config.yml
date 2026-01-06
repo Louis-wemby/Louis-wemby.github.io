@@ -3,17 +3,19 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
-description: ''
-keywords:
-author: John Doe
+title: Louis Base
+subtitle: where miracles happen
+description: Life is like a camera so focus on what's important
+keywords: Life & Study
+author: Louis Xiong
 language: en
-timezone: ''
+timezone: Asia/Shanghai
+email: didarhossain837463@gmail.com
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
 url: http://louis-wemby.github.io
+root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
