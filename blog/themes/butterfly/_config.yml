@@ -22,10 +22,10 @@ menu:
   Archives: /archives/ || fas fa-archive
   Categories: /categories/ || fas fa-folder-open
   Tags: /tags/ || fas fa-tags
-  Link: /links/ || fas fa-link
   List||fas fa-list:
-  Gallery: /gallery/ || fas fa-image
-  Music: /music/ || fas fa-music
+    Gallery: /gallery/ || fas fa-image
+    Music: /music/ || fas fa-music
+  Link: /links/ || fas fa-link
   About: /about/ || fas fa-dna
 
 # --------------------------------------
