@@ -11,7 +11,7 @@
 
 nav:
   # Navigation bar logo image
-  logo: ./source/img/logo.png
+  logo: /img/logo.png
   display_title: true
   display_post_title: true
   # Whether to fix navigation bar
@@ -73,7 +73,7 @@ disable_top_img: false
 default_top_img:
 
 # The banner image of index page
-index_img: ./source/img/index-banner.png
+index_img: /img/index-banner.png
 
 # The banner image of archive page
 archive_img:
