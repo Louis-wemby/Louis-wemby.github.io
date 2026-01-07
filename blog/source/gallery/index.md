@@ -8,4 +8,5 @@ aside: false
 
 <div class="gallery-group-main">
 {% galleryGroup SPURS 'A die-hard Spurs fan' '/gallery/SPURS' /figure/gallery/SPURS/SPURS-banner.jpg %}
+{% galleryGroup Travel 'Embrace the world around you' '/gallery/Travel' /figure/gallery/SPURS/SPURS-banner.jpg %}
 <div>
