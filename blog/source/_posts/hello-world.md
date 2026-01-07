@@ -3,7 +3,8 @@ title: Hello World
 date: 2026-01-06
 updated: 2026-01-07
 description: Initial 'hello world' file.
-top_img: /figure/hello_world.png
+top_img: /figure/posts/hello_world.png
+cover: /figure/posts/hexo.png
 categories:
   - hello world
 tags: 
