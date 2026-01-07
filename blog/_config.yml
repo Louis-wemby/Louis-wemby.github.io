@@ -99,6 +99,10 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: butterfly
 
+# Music player
+aplayer:
+  asset_inject: false
+
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
