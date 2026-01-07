@@ -298,6 +298,7 @@ aside:
     archive: true
     tag: true
     category: true
+    gallery: false
   card_author:
     enable: true
     description:
