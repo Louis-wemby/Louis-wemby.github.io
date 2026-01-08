@@ -998,7 +998,7 @@ pjax:
   enable: false
   # Exclude the specified pages from pjax, such as '/music/'
   exclude:
-    # - /xxxxxx/
+    - /music/
 
 # Inject the css and script (aplayer/meting)
 aplayerInject:
@@ -1133,7 +1133,7 @@ CDN:
     # prismjs_autoloader:
     # prismjs_js:
     # prismjs_lineNumber_js:
-    pjax: true
+    # pjax:
     # sharejs:
     # sharejs_css:
     # snackbar:
