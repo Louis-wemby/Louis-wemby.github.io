@@ -4,7 +4,13 @@ type: music
 date: 2026-01-07 09:56:38
 top_img: /figure/music-banner.jpg
 aside: false
-aplayer: true
+# aplayer: true
 ---
 
-{% meting "34110" "netease" "album" autoplay fixed mini loop=all order=random listfolded listmaxheight=340px preload=auto theme=#2f343f %}
+{% meting "34110" "netease" "album" autoplay fixed mini %}
+
+Welcome to music world. Relax and appreciate.
+
+## If you have a taste for **Beyond**, you know true music.
+
+![Cover](/figure/music-banner-1.png)
