@@ -7,4 +7,14 @@ aside: false
 aplayer: true
 ---
 
-{% meting "34110" "netease" "album" "autoplay:true" "fixed:true" "mini:true" "loop:all" "order:random" "listfolded:true" "listmaxheight:340px" "preload:auto" "theme:#2f343f"%}
+{% meting "34110" "netease" "album"
+  autoplay:true
+  fixed:true
+  mini:true
+  loop:all
+  order:random
+  listfolded:true
+  listmaxheight:340px
+  preload:auto
+  theme:#2f343f
+%}
