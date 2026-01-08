@@ -9,8 +9,8 @@ aside: false
 
 {% meting "34110" "netease" "album" autoplay fixed mini %}
 
-Welcome to music world. Relax and appreciate.
+### Welcome to music world. Relax and appreciate.
 
-## If you have a taste for **Beyond**, you know true music.
+## If you have a taste for **Beyond**, you know true music. 🖤
 
 ![Cover](/figure/music-banner-1.png)

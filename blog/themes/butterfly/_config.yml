@@ -995,10 +995,10 @@ note:
 
 # https://github.com/MoOx/pjax
 pjax:
-  enable: false
+  enable: true
   # Exclude the specified pages from pjax, such as '/music/'
   exclude:
-    - /music/
+    # - /music/
 
 # Inject the css and script (aplayer/meting)
 aplayerInject:
@@ -1133,7 +1133,7 @@ CDN:
     # prismjs_autoloader:
     # prismjs_js:
     # prismjs_lineNumber_js:
-    # pjax:
+    pjax: true
     # sharejs:
     # sharejs_css:
     # snackbar:

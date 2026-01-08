@@ -102,7 +102,7 @@ theme: butterfly
 # Music player
 aplayer:
   meting: true
-  asset_inject: true
+  asset_inject: false
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
