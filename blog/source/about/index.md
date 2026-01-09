@@ -14,7 +14,7 @@ aside: false
 
 <div align="center">
 
-<img src="/blog/source/figure/about/avatar.jpg" width="140" style="border-radius:50%; margin-bottom:10px;" />
+<img src="https://github.com/Louis-wemby/Louis-wemby.github.io/blob/main/blog/source/figure/about/avatar.jpg?raw=true" width="140" style="border-radius:50%; margin-bottom:10px;" />
 
 <h3>Louis</h3>
 
