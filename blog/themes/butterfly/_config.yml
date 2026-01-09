@@ -20,11 +20,11 @@ nav:
 menu:
   Home: / || fas fa-home
   List||fas fa-list:
-    - Archives: /archives/ || fas fa-archive
-    - Categories: /categories/ || fas fa-folder-open
-    - Tags: /tags/ || fas fa-tags
-    - Gallery: /gallery/ || fas fa-image
-    - Music: /music/ || fas fa-music
+    Archives: /archives/ || fas fa-archive
+    Categories: /categories/ || fas fa-folder-open
+    Tags: /tags/ || fas fa-tags
+    Gallery: /gallery/ || fas fa-image
+    Music: /music/ || fas fa-music
   Link: /links/ || fas fa-link
   About: /about/ || fas fa-dna
 
