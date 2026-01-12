@@ -9,6 +9,7 @@ categories:
   - Workflow
 tags: 
   - BGI
+  - Stereo-seq
   - Genomics
   - Spatial Transcriptomics
 comments: true
