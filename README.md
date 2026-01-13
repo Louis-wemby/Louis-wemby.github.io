@@ -3,7 +3,7 @@ Hey guys, I am Louis, a college studnet. This is my **Personal Website** 🍊
 ![Selfie](/blog/source/figure/about-banner.jpg "Selfie")
 
 ## 🔗 Link
-⬇️ Tab the link below to pay a brief visit!<br>
+⬇️ Click the link below to pay a brief visit!<br>
 **[Louis Base](https://louis-wemby.github.io/)**
 
 ## 🐼 About the Page
@@ -15,4 +15,5 @@ Have a quick glance ⬇️
 Great work starts from zero. The website is still under construction. I will try as much as possible to enrich the content and beautify its appearance, making the page meaningful to me, and to you.
 
 ## 🤝 Acknowledgement
+
 The page's framework uses **hexo-theme-butterfly 5.5.3** as template. It is really a stunning design.
