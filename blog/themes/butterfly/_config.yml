@@ -499,6 +499,8 @@ search:
 
   # Local Search
   local_search:
+    enable: true
+    path: search.xml
     # Preload the search data when the page loads.
     preload: false
     # Show top n results per article, show all results by setting to -1
@@ -510,7 +512,7 @@ search:
       enable: false
       # Number of search results per page
       hitsPerPage: 8
-    CDN:
+    # CDN:
 
   # Docsearch
   # https://docsearch.algolia.com/

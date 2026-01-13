@@ -104,6 +104,13 @@ aplayer:
   meting: true
   asset_inject: false
 
+# Local search
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
+
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
