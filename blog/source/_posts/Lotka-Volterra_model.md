@@ -20,51 +20,63 @@ comments: true
 稳定性理论研究微分方程的解及动态系统的轨迹在初始条件有微小扰动时的稳定性.在某初始平衡条件（Equilibrium）下，给系统向某一方向施加一微小扰动，若系统最终可能偏离平衡状态而无法回到原始位置，则该平衡点是**不稳定**的.反之，若为稳定平衡点，则最终能回到原始位置，如摆线的振荡、阻尼振子等系统.
 
 <figure>
-    <img src="[/images/rocks.jpg](https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/DampedCosine.svg/500px-DampedCosine.svg.png)" alt="阻尼振荡">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/DampedCosine.svg/500px-DampedCosine.svg.png" alt="阻尼振荡">
     <figcaption>衰减的阻尼正弦波.来自：Wikipedia.</figcaption>
 </figure>
 
 ### 稳定性的判断
 
-动态系统可用微分方程来描述.对于一维的常微分方程如 $\frac{dx}{dt} = f(x)$，其平衡点 $x^*$ 满足 $f(x^*) = 0$.若 $f'(x^*) < 0$，则平衡点是稳定的；若 $f'(x^*) > 0$，则平衡点是不稳定的.值得注意的是，若 $f'(x^*) = 0$（如下图第二个 stable 处），则需要其他方法判断稳定性.
+动态系统可用微分方程来描述.对于一维的常微分方程如 $\frac{dx}{dt} = f(x)$，其平衡点 ${x^*}$ 满足 $f(x^\ast) = 0$.若 $f'(x^\ast) < 0$，则平衡点是稳定的；若 $f'(x^\ast) > 0$，则平衡点是不稳定的.值得注意的是，若 $f'(x^\ast) = 0$（如下图第二个 stable 处），则需要其他方法判断稳定性.
 
 <figure>
-    <img src="../figure/posts/Lotka-Volterra_model/1D_stability.png" alt="一维稳定性判断">
+    <img src="/blog/source/figure/posts/Lotka-Volterra_model/1D_stability.png" alt="一维稳定性判断">
     <figcaption>一维动态系统的稳定性判断.</figcaption>
 </figure>
 
-而对于二维系统 $\frac{dx}{dt} = f_1(x_1, x_2)$ 和 $\frac{dy}{dt} = f_2(x_1, x_2)$，其平衡点 $(x^*, y^*)$ 满足 $f_1(x^*, y^*) = 0$ 和 $f_2(x^*, y^*) = 0$.通过线性化方法，可以构造类似雅可比矩阵（Jacobian matrix）：
+而对于二维系统 $\frac{dx}{dt} = f_1(x_1, x_2)$ 和 $\frac{dy}{dt} = f_2(x_1, x_2)$，其平衡点 $(x^\ast, y^\ast)$ 满足 $f_1(x^\ast, y^\ast) = 0$ 和 $f_2(x^\ast, y^\ast) = 0$.通过线性化方法，可以构造类似雅可比矩阵（Jacobian matrix）：
 
 $$
-J = \begin{bmatrix}
-\frac{\partial f_1}{\partial x_1} - \lambda & \frac{\partial f_1}{\partial x_2} \\
-\frac{\partial f_2}{\partial x_1} & \frac{\partial f_2}{\partial x_2} - \lambda
+\mathbf{J} - \lambda \mathbf{I} =
+\begin{bmatrix}
+\frac{\partial f_1}{\partial x_1} - \lambda &
+\frac{\partial f_1}{\partial x_2} \\\\
+\frac{\partial f_2}{\partial x_1} &
+\frac{\partial f_2}{\partial x_2} - \lambda
 \end{bmatrix}
+\tag {1}
 $$
 
 通过求解特征值 $\lambda$，可以判断平衡点的稳定性：
 - 若实部均为**负**，则平衡点是**稳定**的（Stable Node）；
 - 若实部均为**正**，则平衡点是**不稳定**的（Unstable Node）；
 - 若实部**异号**，则平衡点是**鞍点**（Saddle Point），亦不稳定.
+
 即 $(x_1,x_2)$ 为稳定点的充要条件为：
 
+当
+
 $$
-\text{Det}(J) = 0
-\text{Re}(\lambda _{1,2}) < 0
+\text{Det} \mathbf{J} = 0 \tag{2}
+$$
+
+时，
+
+$$
+\text{Re}\lambda _{1,2} < 0 \tag{3}
 $$
 
 <figure>
-    <img src="../figure/posts/Lotka-Volterra_model/2D_stability.png" alt="二维稳定性判断">
+    <img src="/blog/source/figure/posts/Lotka-Volterra_model/2D_stability.png" alt="二维稳定性判断">
     <figcaption>二维动态系统的稳定性判断.</figcaption>
 </figure>
 
 ### 李雅普诺夫稳定（Lyapunov stability）
 
-李雅普诺夫稳定常用来描述一个动力系统的稳定性.它是指系统在初始条件有微小扰动时，解的轨迹仍然保持在某一邻域内.具体来说，对于每个 $\epsilon > 0$，均存在 $\delta > 0$，使得当初始条件满足 $||x(0) - x^*|| < \delta$ 时，对于所有 $t \geq {t_0}$，都有 $||x(t) - x^*|| < \epsilon$，则称平衡点 $x^*$ 是李雅普诺夫稳定的.
+李雅普诺夫稳定常用来描述一个动力系统的稳定性.它是指系统在初始条件有微小扰动时，解的轨迹仍然保持在某一邻域内.具体来说，对于每个 $\epsilon > 0$，均存在 $\delta > 0$，使得当初始条件满足 $\lVert x(0) - x^\ast \rVert < \delta$ 时，对于所有 $t \geq {t_0}$，都有 $\lVert x(t) - x^\ast \rVert < \epsilon$，则称平衡点 $x^\ast$ 是李雅普诺夫稳定的.
 
 在李雅普诺夫稳定的基础上，还可以定义渐近稳定（Asymptotic stability）和指数稳定（Exponential stability）等更强的稳定性概念：
-- 渐近稳定：若平衡点李雅普诺夫稳定，且系统的解随着时间趋向于平衡点，即 $\lim_{t \to \infty} x(t) = x^*$ ，则称该平衡点是渐近稳定的.也就是说，渐近稳定不但能维持在平衡点附近，而且最后能收敛到平衡点.
-- 指数稳定：若平衡点渐近稳定，且存在正数 $\alpha$ 和 $\beta$，使得 $||x(t) - x^*|| \leq {\alpha} e^{-\beta t} ||x(0) - x^*||$，则称该平衡点是指数稳定的.指数稳定表明状态函数的收敛速度不慢于某个指数函数的递减速度.
+- 渐近稳定：若平衡点李雅普诺夫稳定，且系统的解随着时间趋向于平衡点，即 $\lim_{t \to \infty} x(t) = x^\ast$ ，则称该平衡点是渐近稳定的.也就是说，渐近稳定不但能维持在平衡点附近，而且最后能收敛到平衡点.
+- 指数稳定：若平衡点渐近稳定，且存在正数 $\alpha$ 和 $\beta$，使得 $\lVert x(t) - x^\ast \rVert \leq {\alpha} e^{-\beta t} \lVert x(0) - x^\ast \rVert$，则称该平衡点是指数稳定的.指数稳定表明状态函数的收敛速度不慢于某个指数函数的递减速度.
 
 ## Lotka-Volterra 模型
 
@@ -84,13 +96,13 @@ Lotka-Volterra 模型通常基于以下基本假设：
 4. 捕食者与猎物的相遇几率和捕食率直接相关.5.捕食者拥有与种群密度无关的恒定死亡率.
 
 该模型可由一对一阶非线性常微分方程描述：
+
 $$
 \begin{cases}
-\begin{align}
-    \frac{dx}{dt} = bx - pxy \\
-    \frac{dy}{dt} = rxy - dy
-\end{align}
-\end{cases} \tag{1}
+\frac{dx}{dt} = bx - pxy \\\\ 
+\frac{dy}{dt} = rxy - dy
+\end{cases}
+\tag{4}
 $$
 
 其中变量 $x$ 表示猎物的种群数量，变量 $y$ 表示捕食者的种群数量.参数 $b$ 表示没有捕食者的情况下猎物种群的自发增长率.参数 $d$ 表示没有猎物的情况下捕食者的自然死亡率.乘积 $pxy$ 与 $rxy$ 分别表示由于捕食者存在猎物数量的净减少率，以及由于猎物存在捕食者数量的净增长率，其数值大小与二者种群数量相关.
@@ -100,36 +112,36 @@ $$
 
 #### 理论计算
 
-不难发现，方程组有两个平衡点 $(0,0)$ 与 $(d/r,b/p)$.前者 $(0,0)$ 为不具备实际意义的平凡解，即猎物与捕食者的种群数量均为零（不稳定的鞍点），且当某一方的数量出现微小扰动时，便立即呈指数增长，从而偏离该平衡点.考虑第二个解 $(d/r,b/p)$，令
+不难发现，方程组有两个平衡点 $(0,0)$ 与 $(\frac{d}{r}, \frac{b}{p})$.前者 $(0,0)$ 为不具备实际意义的平凡解，即猎物与捕食者的种群数量均为零（不稳定的鞍点），且当某一方的数量出现微小扰动时，便立即呈指数增长，从而偏离该平衡点.考虑第二个解 $(\frac{d}{r}, \frac{b}{p})$，令
 
 $$
-Det\begin{bmatrix}
-b-py & -px \\
+\begin{bmatrix}
+b-py & -px \\\\
 ry & rx - d
-\end{bmatrix} = 0 \tag{2}
+\end{bmatrix} = 0
+\tag{5}
 $$
 
 可解得
 
 $$
-\lambda _{1,2} = \pm i\sqrt{bd} \tag{3}
+\lambda _{1,2} = \pm i\sqrt{bd} \tag{6}
 $$
 
 两个解的实部均等于零，可能为稳定点，也可能不是，需进一步讨论.尽管一般的非线性常微分方程组无法求出近似的通解，但对于本模型而言，在平衡态附近的微小扰动可求出近似通解
 
 $$
 \begin{cases}
-\begin{align}
-    x(t) = \frac{d}{r} + \sqrt{c}p{A_0}\cos(\sqrt{bd}t + \phi) \\
-    y(t) = \frac{b}{p} + \sqrt{b}r{A_0}\sin(\sqrt{bd}t + \phi)
-\end{align}
-\end{cases} \tag{4}
+x(t) = \frac{d}{r} + \sqrt{c}\ p A_0 \cos(\sqrt{b d}\ t + \phi) \\\\
+y(t) = \frac{b}{p} + \sqrt{b}\ r A_0 \sin(\sqrt{b d}\ t + \phi)
+\end{cases}
+\tag {7}
 $$
 
 其中 ${A_0}$ 是与 $x$ 和 $y$ 初值有关的常数.解的周期为
 
 $$
-T = \frac{2\pi}{\sqrt{bd}} \tag{5}
+T = \frac{2\pi}{\sqrt{bd}} \tag{8}
 $$
 
 由此可见，对于微小扰动，系统会在平衡点附近做周期性振荡，即 $(\frac{d}{r}, \frac{b}{p})$ 为振荡中心，且振荡的频率与参数 $b$ 和 $d$ 有关.然而，这种振荡并非渐近稳定，因为解不会收敛到平衡点，而是持续围绕平衡点振荡.故此捕食者-猎物动态系统不存在稳定点.
@@ -163,39 +175,39 @@ title('Phase Space')
 grid on;
 ```
 
-###### 验证 $(\frac{d}{r}, \frac{b}{p})$ 的平衡点特性
+##### 验证 $(\frac{d}{r}, \frac{b}{p})$ 的平衡点特性
 
 设置参数 $b=1$，$d=2$，$p=r=0.01$，则平衡点为 $(200,100)$.
 
 设初值 $$(x_0,y_0) = (200,100)$$，在无扰动的情况下，种群数量保持不变，符合平衡点的特性.（下列所有结果图中，左边为种群数量变化曲线，红色代表猎物，蓝色代表捕食者；右边为相平面轨迹图.）
 
 <figure>
-    <img src="../figure/posts/Lotka-Volterra_model/result1.png" alt="Lotka-Volterra 模型模拟结果1">
+    <img src="/blog/source/figure/posts/Lotka-Volterra_model/result1.png" alt="Lotka-Volterra 模型模拟结果1">
     <figcaption>初值设为平衡点 $(200,100)$ 时的模拟结果.</figcaption>
 </figure>
 
 任取初值如 $$(x_0,y_0) = (199,99)$$，可见种群数量围绕平衡点做周期性振荡.
 
 <figure>
-    <img src="../figure/posts/Lotka-Volterra_model/result2.png" alt="Lotka-Volterra 模型模拟结果2">
+    <img src="/blog/source/figure/posts/Lotka-Volterra_model/result2.png" alt="Lotka-Volterra 模型模拟结果2">
     <figcaption>初值设为 $(199,99)$ 时的模拟结果.</figcaption>
 </figure>
 
 再如初值 $$(x_0,y_0) = (10,20)$$，同样可见种群数量围绕平衡点做周期性振荡.
 
 <figure>
-    <img src="../figure/posts/Lotka-Volterra_model/result3.png" alt="Lotka-Volterra 模型模拟结果3">
+    <img src="/blog/source/figure/posts/Lotka-Volterra_model/result3.png" alt="Lotka-Volterra 模型模拟结果3">
     <figcaption>初值设为 $(10,20)$ 时的模拟结果.</figcaption>
 </figure>
 
 由此可见，在不同初始条件下，种群数量均围绕平衡点 $(200,100)$ 做周期性振荡，验证了理论计算结果的正确性.然而，当初始条件偏离平衡点较近时，振荡幅度较小，相平面轨迹近似椭圆形闭合轨道；当初始条件偏离平衡点较远时，振荡幅度较大，相平面轨迹与椭圆形或圆形相差甚远，这是因为在鞍点 $(0,0)$ 附近取初值时，其相空间行为表现出一定的鞍点特征.上述结果表明振荡的幅度与初始条件有关，但振荡的频率（周期）仅与参数 $b$ 和 $d$ 有关.
 
-###### 固定参数条件下不同初值对曲线变化趋势的影响
+##### 固定参数条件下不同初值对曲线变化趋势的影响
 
 在平衡点附近各自取初值 $$(x_0,y_0) = (202,98)$$，
 
 <figure>
-    <img src="../figure/posts/Lotka-Volterra_model/result4.png" alt="Lotka-Volterra 模型模拟结果4">
+    <img src="/blog/source/figure/posts/Lotka-Volterra_model/result4.png" alt="Lotka-Volterra 模型模拟结果4">
     <figcaption>初值设为 $(202,98)$ 时的模拟结果.</figcaption>
 </figure>
 
@@ -204,12 +216,12 @@ grid on;
 再分别取$$(x_0,y_0) = (250,50)$$ 和 $$(x_0,y_0) = (1000,500)$$，可见种群数量虽然围绕平衡点做周期性振荡，但振荡幅度差异显著.尤其当偏离平衡位置较远时，振荡幅度可变得极其剧烈，不稳定的性质愈加明显.
 
 <figure>
-    <img src="../figure/posts/Lotka-Volterra_model/result5.png" alt="Lotka-Volterra 模型模拟结果5">
+    <img src="/blog/source/figure/posts/Lotka-Volterra_model/result5.png" alt="Lotka-Volterra 模型模拟结果5">
     <figcaption>初值设为 $(250,50)$ 时的模拟结果.</figcaption>
 </figure>
 
 <figure>
-    <img src="../figure/posts/Lotka-Volterra_model/result6.png" alt="Lotka-Volterra 模型模拟结果6">
+    <img src="/blog/source/figure/posts/Lotka-Volterra_model/result6.png" alt="Lotka-Volterra 模型模拟结果6">
     <figcaption>初值设为 $(1000,500)$ 时的模拟结果.</figcaption>
 </figure>
 
@@ -218,7 +230,7 @@ grid on;
 设初值 $$(x_0,y_0) = (250,50)$$.通过与前面结果的对比，可以发现种群数量依然围绕平衡点做周期性振荡，波动幅度（波峰和波谷）不变，但振荡频率更快，周期变小为原来的一半.
 
 <figure>
-    <img src="../figure/posts/Lotka-Volterra_model/result7.png" alt="Lotka-Volterra 模型模拟结果7">
+    <img src="/blog/source/figure/posts/Lotka-Volterra_model/result7.png" alt="Lotka-Volterra 模型模拟结果7">
     <figcaption>参数变为原来两倍，初值设为 $(250,50)$ 时的模拟结果.</figcaption>
 </figure>
 
