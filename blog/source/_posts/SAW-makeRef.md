@@ -6,7 +6,7 @@ description: SAW-ST-V8 make reference.
 top_img: https://www.vangoghgallery.com/img/starry_night_full.jpg
 cover: https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/29/1/10.1093_bioinformatics_bts635/3/m_bioinformatics_29_1_15_f2.jpeg?Expires=1771021321&Signature=fqt36-Ujsft5yhbtrBM0IVIOgNYIJdnH2nPfHkwb~JZD1RMAQ-Khdm6Qkf6X2m~MbpxQ4D~otvV37upgiKEy7dCA5r5wky4G9PL84IZxKK08t6oBzY1w-LB-gjzFS1gg4RMojlD~WYIgMjkBFkcAWdrrY3ZcoL1NwCkURaodOQbVmyn80P4SD89j3F9ylCvcKp6Dgn3Nj1yLcqgvxu9s-Rgs4cvbsJRWHSxHqpo0JmjtDDyFkzvDXHpwxsMaF60BvwMpvw5hMGBH0D2tBWm7Z~5jOkdpv0QySk~WoALpsNsgJndzXFF3jftYEyqN4h7fyDBN6DJREleM5lyhTwM2ow__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA
 categories:
-  - Workflow
+  - Tutorial
 tags: 
   - BGI
   - Stereo-seq
