@@ -468,7 +468,7 @@ busuanzi:
 math:
   # Choose: mathjax, katex
   # Leave it empty if you don't need math
-  use:
+  use: katex
   per_page: true
   hide_scrollbar: false
 
@@ -489,8 +489,8 @@ math:
 search:
   # Choose: algolia_search / local_search / docsearch
   # leave it empty if you don't need search
-  use:
-  placeholder:
+  use: local_search
+  placeholder: Find whatever you want...
 
   # Algolia Search
   algolia_search:
@@ -502,7 +502,7 @@ search:
     # Preload the search data when the page loads.
     preload: false
     # Show top n results per article, show all results by setting to -1
-    top_n_per_article: 1
+    top_n_per_article: 3
     # Unescape html strings to the readable one.
     unescape: false
     # Enable pagination for search results
