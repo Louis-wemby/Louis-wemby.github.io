@@ -179,35 +179,39 @@
 })()
 </script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">7</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">3</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></li><li><a class="site-page child" href="/gallery/"><i class="fa-fw fas fa-image"></i><span> Gallery</span></a></li><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/links/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-dna"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(https://i.natgeofe.com/n/ee1a256e-5a93-4ddd-891b-6e3fb341cd83/01predators-phenomena.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><img class="site-icon" src="/img/logo.png" alt="Logo"><span class="site-name">Louis Base</span></a><a class="nav-page-title" href="/"><span class="site-name">动态系统稳定性与 Lotka-Volterra 模型浅略研究</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  Back to Home</span></span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><span class="site-page group"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></span><ul class="menus_item_child"><li><a class="site-page child" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></li><li><a class="site-page child" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></li><li><a class="site-page child" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></li><li><a class="site-page child" href="/gallery/"><i class="fa-fw fas fa-image"></i><span> Gallery</span></a></li><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/links/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-dna"></i><span> About</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">动态系统稳定性与 Lotka-Volterra 模型浅略研究</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2026-01-12T16:00:00.000Z" title="Created 2026-01-13 00:00:00">2026-01-13</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2026-01-12T16:00:00.000Z" title="Updated 2026-01-13 00:00:00">2026-01-13</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Exploration/">Exploration</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">Word Count:</span><span class="word-count">3k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">Reading Time:</span><span>10mins</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post Views:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h2 id="稳定性理论（Stability-theory）"><a href="#稳定性理论（Stability-theory）" class="headerlink" title="稳定性理论（Stability theory）"></a>稳定性理论（Stability theory）</h2><h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>稳定性理论研究微分方程的解及动态系统的轨迹在初始条件有微小扰动时的稳定性.在某初始平衡条件（Equilibrium）下，给系统向某一方向施加一微小扰动，若系统最终可能偏离平衡状态而无法回到原始位置，则该平衡点是<strong>不稳定</strong>的.反之，若为稳定平衡点，则最终能回到原始位置，如摆线的振荡、阻尼振子等系统.</p>
 <figure>
-    <img src="[/images/rocks.jpg](https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/DampedCosine.svg/500px-DampedCosine.svg.png)" alt="阻尼振荡">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/DampedCosine.svg/500px-DampedCosine.svg.png" alt="阻尼振荡">
     <figcaption>衰减的阻尼正弦波.来自：Wikipedia.</figcaption>
 </figure>
 
-<h3 id="稳定性的判断"><a href="#稳定性的判断" class="headerlink" title="稳定性的判断"></a>稳定性的判断</h3><p>动态系统可用微分方程来描述.对于一维的常微分方程如 $\frac{dx}{dt} &#x3D; f(x)$，其平衡点 $x^<em>$ 满足 $f(x^</em>) &#x3D; 0$.若 $f’(x^<em>) &lt; 0$，则平衡点是稳定的；若 $f’(x^*) &gt; 0$，则平衡点是不稳定的.值得注意的是，若 $f’(x^</em>) &#x3D; 0$（如下图第二个 stable 处），则需要其他方法判断稳定性.</p>
+<h3 id="稳定性的判断"><a href="#稳定性的判断" class="headerlink" title="稳定性的判断"></a>稳定性的判断</h3><p>动态系统可用微分方程来描述.对于一维的常微分方程如 $\frac{dx}{dt} &#x3D; f(x)$，其平衡点 ${x^<em>}$ 满足 $f({x^</em>}) &#x3D; 0$.若 $f’({x^<em>}) &lt; 0$，则平衡点是稳定的；若 $f’({x^*}) &gt; 0$，则平衡点是不稳定的.值得注意的是，若 $f’({x^</em>}) &#x3D; 0$（如下图第二个 stable 处），则需要其他方法判断稳定性.</p>
 <figure>
     <img src="../figure/posts/Lotka-Volterra_model/1D_stability.png" alt="一维稳定性判断">
     <figcaption>一维动态系统的稳定性判断.</figcaption>
 </figure>
 
-<p>而对于二维系统 $\frac{dx}{dt} &#x3D; f_1(x_1, x_2)$ 和 $\frac{dy}{dt} &#x3D; f_2(x_1, x_2)$，其平衡点 $(x^<em>, y^</em>)$ 满足 $f_1(x^<em>, y^</em>) &#x3D; 0$ 和 $f_2(x^<em>, y^</em>) &#x3D; 0$.通过线性化方法，可以构造类似雅可比矩阵（Jacobian matrix）：</p>
-<p>$$<br>J &#x3D; \begin{bmatrix}<br>\frac{\partial f_1}{\partial x_1} - \lambda &amp; \frac{\partial f_1}{\partial x_2} \<br>\frac{\partial f_2}{\partial x_1} &amp; \frac{\partial f_2}{\partial x_2} - \lambda<br>\end{bmatrix}<br>$$</p>
+<p>而对于二维系统 $\frac{dx}{dt} &#x3D; f_1(x_1, x_2)$ 和 $\frac{dy}{dt} &#x3D; f_2(x_1, x_2)$，其平衡点 $({x^<em>}, {y^</em>})$ 满足 $f_1({x^<em>}, {y^</em>}) &#x3D; 0$ 和 $f_2({x^<em>}, {y^</em>}) &#x3D; 0$.通过线性化方法，可以构造类似雅可比矩阵（Jacobian matrix）：</p>
+<p>$$<br>\mathbf{J} &#x3D;<br>\begin{bmatrix}<br>\frac{\partial f_1}{\partial x_1} - \lambda &amp; \frac{\partial f_1}{\partial x_2} \<br>\frac{\partial f_2}{\partial x_1} &amp; \frac{\partial f_2}{\partial x_2} - \lambda<br>\end{bmatrix}<br>$$</p>
 <p>通过求解特征值 $\lambda$，可以判断平衡点的稳定性：</p>
 <ul>
 <li>若实部均为<strong>负</strong>，则平衡点是<strong>稳定</strong>的（Stable Node）；</li>
 <li>若实部均为<strong>正</strong>，则平衡点是<strong>不稳定</strong>的（Unstable Node）；</li>
-<li>若实部<strong>异号</strong>，则平衡点是<strong>鞍点</strong>（Saddle Point），亦不稳定.<br>即 $(x_1,x_2)$ 为稳定点的充要条件为：</li>
+<li>若实部<strong>异号</strong>，则平衡点是<strong>鞍点</strong>（Saddle Point），亦不稳定.</li>
 </ul>
-<p>$$<br>\text{Det}(J) &#x3D; 0<br>\text{Re}(\lambda _{1,2}) &lt; 0<br>$$</p>
+<p>即 $(x_1,x_2)$ 为稳定点的充要条件为：</p>
+<p>当</p>
+<p>$$<br>\text{Det}(\mathbf{J}) &#x3D; 0<br>$$</p>
+<p>时</p>
+<p>$$<br>\text{Re}\lambda _{1,2} &lt; 0<br>$$</p>
 <figure>
     <img src="../figure/posts/Lotka-Volterra_model/2D_stability.png" alt="二维稳定性判断">
     <figcaption>二维动态系统的稳定性判断.</figcaption>
 </figure>
 
-<h3 id="李雅普诺夫稳定（Lyapunov-stability）"><a href="#李雅普诺夫稳定（Lyapunov-stability）" class="headerlink" title="李雅普诺夫稳定（Lyapunov stability）"></a>李雅普诺夫稳定（Lyapunov stability）</h3><p>李雅普诺夫稳定常用来描述一个动力系统的稳定性.它是指系统在初始条件有微小扰动时，解的轨迹仍然保持在某一邻域内.具体来说，对于每个 $\epsilon &gt; 0$，均存在 $\delta &gt; 0$，使得当初始条件满足 $||x(0) - x^<em>|| &lt; \delta$ 时，对于所有 $t \geq {t_0}$，都有 $||x(t) - x^</em>|| &lt; \epsilon$，则称平衡点 $x^*$ 是李雅普诺夫稳定的.</p>
+<h3 id="李雅普诺夫稳定（Lyapunov-stability）"><a href="#李雅普诺夫稳定（Lyapunov-stability）" class="headerlink" title="李雅普诺夫稳定（Lyapunov stability）"></a>李雅普诺夫稳定（Lyapunov stability）</h3><p>李雅普诺夫稳定常用来描述一个动力系统的稳定性.它是指系统在初始条件有微小扰动时，解的轨迹仍然保持在某一邻域内.具体来说，对于每个 $\epsilon &gt; 0$，均存在 $\delta &gt; 0$，使得当初始条件满足 $||x(0) - {x^<em>}|| &lt; \delta$ 时，对于所有 $t \geq {t_0}$，都有 $||x(t) - {x^</em>}|| &lt; \epsilon$，则称平衡点 ${x^*}$ 是李雅普诺夫稳定的.</p>
 <p>在李雅普诺夫稳定的基础上，还可以定义渐近稳定（Asymptotic stability）和指数稳定（Exponential stability）等更强的稳定性概念：</p>
 <ul>
-<li>渐近稳定：若平衡点李雅普诺夫稳定，且系统的解随着时间趋向于平衡点，即 $\lim_{t \to \infty} x(t) &#x3D; x^*$ ，则称该平衡点是渐近稳定的.也就是说，渐近稳定不但能维持在平衡点附近，而且最后能收敛到平衡点.</li>
-<li>指数稳定：若平衡点渐近稳定，且存在正数 $\alpha$ 和 $\beta$，使得 $||x(t) - x^<em>|| \leq {\alpha} e^{-\beta t} ||x(0) - x^</em>||$，则称该平衡点是指数稳定的.指数稳定表明状态函数的收敛速度不慢于某个指数函数的递减速度.</li>
+<li>渐近稳定：若平衡点李雅普诺夫稳定，且系统的解随着时间趋向于平衡点，即 $\lim_{t \to \infty} x(t) &#x3D; {x^*}$ ，则称该平衡点是渐近稳定的.也就是说，渐近稳定不但能维持在平衡点附近，而且最后能收敛到平衡点.</li>
+<li>指数稳定：若平衡点渐近稳定，且存在正数 $\alpha$ 和 $\beta$，使得 $||x(t) - {x^<em>}|| \leq {\alpha} e^{-\beta t} ||x(0) - {x^</em>}||$，则称该平衡点是指数稳定的.指数稳定表明状态函数的收敛速度不慢于某个指数函数的递减速度.</li>
 </ul>
 <h2 id="Lotka-Volterra-模型"><a href="#Lotka-Volterra-模型" class="headerlink" title="Lotka-Volterra 模型"></a>Lotka-Volterra 模型</h2><h3 id="模型概述"><a href="#模型概述" class="headerlink" title="模型概述"></a>模型概述</h3><p>Lotka-Volterra 模型由 Alfred Lotka（1925年）和 Vito Volterra（1926年）提出.该模型运用数学框架（常微分方程）描述自然界生态系统中捕食者与猎物种群数量随时间的动态变化，揭示两者间相互作用关系，对预测种群波动和理解生态系统的稳定性具有重要意义.</p>
 <figure>
@@ -222,15 +226,16 @@
 <li>没有年龄结构差异，能持续繁殖，捕食者与猎物间具有原子同质性.</li>
 <li>捕食者与猎物的相遇几率和捕食率直接相关.5.捕食者拥有与种群密度无关的恒定死亡率.</li>
 </ol>
-<p>该模型可由一对一阶非线性常微分方程描述：<br>$$<br>\begin{cases}<br>\begin{align}<br>    \frac{dx}{dt} &#x3D; bx - pxy \<br>    \frac{dy}{dt} &#x3D; rxy - dy<br>\end{align}<br>\end{cases} \tag{1}<br>$$</p>
+<p>该模型可由一对一阶非线性常微分方程描述：</p>
+<p>$$<br>\begin{equation}<br>\begin{cases}<br>\begin{aligned}<br>    \frac{dx}{dt} &#x3D; bx - pxy \<br>    \frac{dy}{dt} &#x3D; rxy - dy<br>\end{aligned}<br>\end{cases} \tag{1}<br>\end{equation}<br>$$</p>
 <p>其中变量 $x$ 表示猎物的种群数量，变量 $y$ 表示捕食者的种群数量.参数 $b$ 表示没有捕食者的情况下猎物种群的自发增长率.参数 $d$ 表示没有猎物的情况下捕食者的自然死亡率.乘积 $pxy$ 与 $rxy$ 分别表示由于捕食者存在猎物数量的净减少率，以及由于猎物存在捕食者数量的净增长率，其数值大小与二者种群数量相关.</p>
 <h3 id="稳定性分析"><a href="#稳定性分析" class="headerlink" title="稳定性分析"></a>稳定性分析</h3><p>结合上述方程组，可提出以下问题：猎物与捕食者的种群数量将随时间如何变化？是否存在平衡点与稳定点？如果不稳定，能否形成振荡？持续的振荡需要满足何种参数条件，与初始种群数量是否有关系？</p>
-<h4 id="理论计算"><a href="#理论计算" class="headerlink" title="理论计算"></a>理论计算</h4><p>不难发现，方程组有两个平衡点 $(0,0)$ 与 $(d&#x2F;r,b&#x2F;p)$.前者 $(0,0)$ 为不具备实际意义的平凡解，即猎物与捕食者的种群数量均为零（不稳定的鞍点），且当某一方的数量出现微小扰动时，便立即呈指数增长，从而偏离该平衡点.考虑第二个解 $(d&#x2F;r,b&#x2F;p)$，令</p>
-<p>$$<br>Det\begin{bmatrix}<br>b-py &amp; -px \<br>ry &amp; rx - d<br>\end{bmatrix} &#x3D; 0 \tag{2}<br>$$</p>
+<h4 id="理论计算"><a href="#理论计算" class="headerlink" title="理论计算"></a>理论计算</h4><p>不难发现，方程组有两个平衡点 $(0,0)$ 与 $(\frac{d}{r}, \frac{b}{p})$.前者 $(0,0)$ 为不具备实际意义的平凡解，即猎物与捕食者的种群数量均为零（不稳定的鞍点），且当某一方的数量出现微小扰动时，便立即呈指数增长，从而偏离该平衡点.考虑第二个解 $(\frac{d}{r}, \frac{b}{p})$，令</p>
+<p>$$<br>Det<br>\begin{bmatrix}<br>b-py &amp; -px \<br>ry &amp; rx - d<br>\end{bmatrix} &#x3D; 0 \tag{2}<br>$$</p>
 <p>可解得</p>
 <p>$$<br>\lambda _{1,2} &#x3D; \pm i\sqrt{bd} \tag{3}<br>$$</p>
 <p>两个解的实部均等于零，可能为稳定点，也可能不是，需进一步讨论.尽管一般的非线性常微分方程组无法求出近似的通解，但对于本模型而言，在平衡态附近的微小扰动可求出近似通解</p>
-<p>$$<br>\begin{cases}<br>\begin{align}<br>    x(t) &#x3D; \frac{d}{r} + \sqrt{c}p{A_0}\cos(\sqrt{bd}t + \phi) \<br>    y(t) &#x3D; \frac{b}{p} + \sqrt{b}r{A_0}\sin(\sqrt{bd}t + \phi)<br>\end{align}<br>\end{cases} \tag{4}<br>$$</p>
+<p>$$<br>\begin{equation}<br>\begin{cases}<br>\begin{aligned}<br>    x(t) &#x3D; \frac{d}{r} + \sqrt{c}p{A_0}\cos(\sqrt{bd}t + \phi) \<br>    y(t) &#x3D; \frac{b}{p} + \sqrt{b}r{A_0}\sin(\sqrt{bd}t + \phi)<br>\end{aligned}<br>\end{cases} \tag{4}<br>\end{equation}<br>$$</p>
 <p>其中 ${A_0}$ 是与 $x$ 和 $y$ 初值有关的常数.解的周期为</p>
 <p>$$<br>T &#x3D; \frac{2\pi}{\sqrt{bd}} \tag{5}<br>$$</p>
 <p>由此可见，对于微小扰动，系统会在平衡点附近做周期性振荡，即 $(\frac{d}{r}, \frac{b}{p})$ 为振荡中心，且振荡的频率与参数 $b$ 和 $d$ 有关.然而，这种振荡并非渐近稳定，因为解不会收敛到平衡点，而是持续围绕平衡点振荡.故此捕食者-猎物动态系统不存在稳定点.</p>
