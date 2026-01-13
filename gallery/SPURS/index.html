@@ -166,20 +166,80 @@
 <div class="gallery-container" data-type="data" data-button="" data-limit="10" data-first="10">
     <div class="gallery-items">[{"url":"https://pbs.twimg.com/media/FvNseKqXwAIwMBx?format=jpg&name=4096x4096","alt":"Duncan: MVP","title":""},{"url":"https://pbs.twimg.com/media/GstRdPoXIAAKces?format=jpg&name=900x900","alt":"Duncan: Champion","title":""},{"url":"https://pbs.twimg.com/media/Cqt00f0WgAEC9AH.jpg","alt":"GDP: On the bench","title":""},{"url":"https://pbs.twimg.com/media/GDktS-1XIAA3sjr?format=jpg&name=4096x4096","alt":"Tony: Tower","title":""},{"url":"https://library.sportingnews.com/styles/twitter_card_120x120/s3/2022-01/manu-ginobili_1r8fwr6j58twj1v9ovrn6ltrrm.jpg?itok=cdd6k4QP","alt":"Manu: Cheer","title":""},{"url":"https://cloudfront-us-east-1.images.arcpublishing.com/bostonglobe/HTNEWFX3FYI6HNABKNX2OT7P6E.jpg","alt":"GDP: the 5th Champion","title":""},{"url":"https://platform.poundingtherock.com/wp-content/uploads/sites/126/2026/01/gettyimages-2254994473.jpg?quality=90&strip=all&crop=0%2C0%2C100%2C100&w=2400","alt":"Wemby: Off the glass","title":""},{"url":"https://athlonsports.com/.image/w_3840,q_auto:good,c_limit/MjA5MDk3NDkyNDM0NzkwMjQ0/victor-wembanyama.jpg?arena_f_auto","alt":"Wemby: Three","title":""},{"url":"https://library.sportingnews.com/styles/twitter_card_120x120/s3/2024-11/Victor%20Wembanyama%20111424.jpeg?itok=X-_J7f3Y","alt":"Wemby: Three (the 50 pts game)","title":""},{"url":"https://s.hdnux.com/photos/01/55/21/22/28644499/3/1920x0.jpg","alt":"Wemby: Dunk on Draymond","title":""},{"url":"https://s.hdnux.com/photos/01/55/17/64/28638511/3/1920x0.jpg","alt":"Castle: Jumpshot vs Steph","title":""},{"url":"https://s.hdnux.com/photos/01/46/34/56/26856345/3/1920x0.jpg","alt":"Castle: Dunk","title":""},{"url":"https://platform.poundingtherock.com/wp-content/uploads/sites/126/2025/10/gettyimages-2183232879.jpg?quality=90&strip=all&crop=0,3.1660292368019,100,52.373484591822","alt":"51 Area","title":""}]</div>
   </div>
-</div></div></main><footer id="footer" style="background-image: url(/figure/gallery/SPURS/SPURS-banner.jpg);"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2026 By Louis Xiong</span><span class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 8.1.1</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.3</a></span></div><div class="footer_custom_text">Thanks for visiting my blog!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Toggle Between Light and Dark Mode"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Settings"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back to Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.3"></script><script src="/js/main.js?v=5.5.3"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1.7/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.js"></script><div class="js-pjax"><script>(async () => {
-  const showKatex = () => {
-    document.querySelectorAll('#article-container .katex').forEach(el => el.classList.add('katex-show'))
-  }
+</div></div></main><footer id="footer" style="background-image: url(/figure/gallery/SPURS/SPURS-banner.jpg);"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2026 By Louis Xiong</span><span class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 8.1.1</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.3</a></span></div><div class="footer_custom_text">Thanks for visiting my blog!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Toggle Between Light and Dark Mode"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Settings"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back to Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.3"></script><script src="/js/main.js?v=5.5.3"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@6.1.7/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.js"></script><div class="js-pjax"><script>(() => {
+  const loadMathjax = () => {
+    if (!window.MathJax) {
+      window.MathJax = {
+        loader: {
+          load: [
+            // Four font extension packages (optional)
+            //- '[tex]/bbm',
+            //- '[tex]/bboldx',
+            //- '[tex]/dsfont',
+            '[tex]/mhchem'
+          ],
+          paths: {
+            'mathjax-newcm': '[mathjax]/../@mathjax/mathjax-newcm-font',
 
-  if (!window.katex_js_css) {
-    window.katex_js_css = true
-    await btf.getCSS('https://cdn.jsdelivr.net/npm/katex@0.16.27/dist/katex.min.css')
-    if (false) {
-      await btf.getScript('https://cdn.jsdelivr.net/npm/katex@0.16.27/dist/contrib/copy-tex.min.js')
+            //- // Four font extension packages (optional)
+            //- 'mathjax-bbm-extension': '[mathjax]/../@mathjax/mathjax-bbm-font-extension',
+            //- 'mathjax-bboldx-extension': '[mathjax]/../@mathjax/mathjax-bboldx-font-extension',
+            //- 'mathjax-dsfont-extension': '[mathjax]/../@mathjax/mathjax-dsfont-font-extension',
+            'mathjax-mhchem-extension': '[mathjax]/../@mathjax/mathjax-mhchem-font-extension'
+          }
+        },
+        output: {
+          font: 'mathjax-newcm',
+        },
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']],
+          tags: 'none',
+          packages: {
+            '[+]': [
+              'mhchem'
+            ]
+          }
+        },
+        chtml: {
+          scale: 1.1
+        },
+        options: {
+          enableMenu: true,
+          menuOptions: {
+            settings: {
+              enrich: false  // Turn off Braille and voice narration text automatic generation
+            }
+          },
+          renderActions: {
+            findScript: [10, doc => {
+              for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+                const display = !!node.type.match(/; *mode=display/)
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+                const text = document.createTextNode('')
+                node.parentNode.replaceChild(text, node)
+                math.start = {node: text, delim: '', n: 0}
+                math.end = {node: text, delim: '', n: 0}
+                doc.math.push(math)
+              }
+            }, '']
+          }
+        }
+      }
+
+      const script = document.createElement('script')
+      script.src = 'https://cdn.jsdelivr.net/npm/mathjax@4.0.0/tex-mml-chtml.min.js'
+      script.id = 'MathJax-script'
+      script.async = true
+      document.head.appendChild(script)
+    } else {
+      MathJax.startup.document.state(0)
+      MathJax.texReset()
+      MathJax.typesetPromise()
     }
   }
 
-  showKatex()
+  btf.addGlobalFn('encrypt', loadMathjax, 'mathjax')
+  window.pjax ? loadMathjax() : window.addEventListener('load', loadMathjax)
 })()</script><script>(() => {
   const runMermaid = ele => {
     window.loadMermaid = true
