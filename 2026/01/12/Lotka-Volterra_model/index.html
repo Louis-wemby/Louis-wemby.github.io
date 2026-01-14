@@ -185,7 +185,7 @@
 
 <h3 id="稳定性的判断"><a href="#稳定性的判断" class="headerlink" title="稳定性的判断"></a>稳定性的判断</h3><p>动态系统可用微分方程来描述.对于一维的常微分方程如 $\frac{dx}{dt} &#x3D; f(x)$，其平衡点 ${x^*}$ 满足 $f(x^\ast) &#x3D; 0$.若 $f’(x^\ast) &lt; 0$，则平衡点是稳定的；若 $f’(x^\ast) &gt; 0$，则平衡点是不稳定的.值得注意的是，若 $f’(x^\ast) &#x3D; 0$（如下图第二个 stable 处），则需要其他方法判断稳定性.</p>
 <figure>
-    <img src="/blog/source/figure/posts/Lotka-Volterra_model/1D_stability.png" alt="一维稳定性判断">
+    <img src="https://github.com/Louis-wemby/Louis-wemby.github.io/blob/mainhttps://github.com/Louis-wemby/Louis-wemby.github.io/blob/main/blog/source/figure/posts/Lotka-Volterra_model/1D_stability.png?raw=true" alt="一维稳定性判断">
     <figcaption>一维动态系统的稳定性判断.</figcaption>
 </figure>
 
@@ -203,7 +203,7 @@
 <p>时，</p>
 <p>$$<br>\text{Re}\lambda _{1,2} &lt; 0 \tag{3}<br>$$</p>
 <figure>
-    <img src="/blog/source/figure/posts/Lotka-Volterra_model/2D_stability.png" alt="二维稳定性判断">
+    <img src="https://github.com/Louis-wemby/Louis-wemby.github.io/blob/mainhttps://github.com/Louis-wemby/Louis-wemby.github.io/blob/main/blog/source/figure/posts/Lotka-Volterra_model/2D_stability.png?raw=true" alt="二维稳定性判断">
     <figcaption>二维动态系统的稳定性判断.</figcaption>
 </figure>
 
@@ -245,45 +245,45 @@
 <h5 id="验证-frac-d-r-frac-b-p-的平衡点特性"><a href="#验证-frac-d-r-frac-b-p-的平衡点特性" class="headerlink" title="验证 $(\frac{d}{r}, \frac{b}{p})$ 的平衡点特性"></a>验证 $(\frac{d}{r}, \frac{b}{p})$ 的平衡点特性</h5><p>设置参数 $b&#x3D;1$，$d&#x3D;2$，$p&#x3D;r&#x3D;0.01$，则平衡点为 $(200,100)$.</p>
 <p>设初值 $$(x_0,y_0) &#x3D; (200,100)$$，在无扰动的情况下，种群数量保持不变，符合平衡点的特性.（下列所有结果图中，左边为种群数量变化曲线，红色代表猎物，蓝色代表捕食者；右边为相平面轨迹图.）</p>
 <figure>
-    <img src="/blog/source/figure/posts/Lotka-Volterra_model/result1.png" alt="Lotka-Volterra 模型模拟结果1">
+    <img src="https://github.com/Louis-wemby/Louis-wemby.github.io/blob/main/blog/source/figure/posts/Lotka-Volterra_model/result1.png?raw=true" alt="Lotka-Volterra 模型模拟结果1">
     <figcaption>初值设为平衡点 $(200,100)$ 时的模拟结果.</figcaption>
 </figure>
 
 <p>任取初值如 $$(x_0,y_0) &#x3D; (199,99)$$，可见种群数量围绕平衡点做周期性振荡.</p>
 <figure>
-    <img src="/blog/source/figure/posts/Lotka-Volterra_model/result2.png" alt="Lotka-Volterra 模型模拟结果2">
+    <img src="https://github.com/Louis-wemby/Louis-wemby.github.io/blob/main/blog/source/figure/posts/Lotka-Volterra_model/result2.png?raw=true" alt="Lotka-Volterra 模型模拟结果2">
     <figcaption>初值设为 $(199,99)$ 时的模拟结果.</figcaption>
 </figure>
 
 <p>再如初值 $$(x_0,y_0) &#x3D; (10,20)$$，同样可见种群数量围绕平衡点做周期性振荡.</p>
 <figure>
-    <img src="/blog/source/figure/posts/Lotka-Volterra_model/result3.png" alt="Lotka-Volterra 模型模拟结果3">
+    <img src="https://github.com/Louis-wemby/Louis-wemby.github.io/blob/main/blog/source/figure/posts/Lotka-Volterra_model/result3.png?raw=true" alt="Lotka-Volterra 模型模拟结果3">
     <figcaption>初值设为 $(10,20)$ 时的模拟结果.</figcaption>
 </figure>
 
 <p>由此可见，在不同初始条件下，种群数量均围绕平衡点 $(200,100)$ 做周期性振荡，验证了理论计算结果的正确性.然而，当初始条件偏离平衡点较近时，振荡幅度较小，相平面轨迹近似椭圆形闭合轨道；当初始条件偏离平衡点较远时，振荡幅度较大，相平面轨迹与椭圆形或圆形相差甚远，这是因为在鞍点 $(0,0)$ 附近取初值时，其相空间行为表现出一定的鞍点特征.上述结果表明振荡的幅度与初始条件有关，但振荡的频率（周期）仅与参数 $b$ 和 $d$ 有关.</p>
 <h5 id="固定参数条件下不同初值对曲线变化趋势的影响"><a href="#固定参数条件下不同初值对曲线变化趋势的影响" class="headerlink" title="固定参数条件下不同初值对曲线变化趋势的影响"></a>固定参数条件下不同初值对曲线变化趋势的影响</h5><p>在平衡点附近各自取初值 $$(x_0,y_0) &#x3D; (202,98)$$，</p>
 <figure>
-    <img src="/blog/source/figure/posts/Lotka-Volterra_model/result4.png" alt="Lotka-Volterra 模型模拟结果4">
+    <img src="https://github.com/Louis-wemby/Louis-wemby.github.io/blob/main/blog/source/figure/posts/Lotka-Volterra_model/result4.png?raw=true" alt="Lotka-Volterra 模型模拟结果4">
     <figcaption>初值设为 $(202,98)$ 时的模拟结果.</figcaption>
 </figure>
 
 <p>此时，发现两曲线并没有交点，两者种群数量分别在各自平衡点附近做振幅较小的周期性振荡.</p>
 <p>再分别取$$(x_0,y_0) &#x3D; (250,50)$$ 和 $$(x_0,y_0) &#x3D; (1000,500)$$，可见种群数量虽然围绕平衡点做周期性振荡，但振荡幅度差异显著.尤其当偏离平衡位置较远时，振荡幅度可变得极其剧烈，不稳定的性质愈加明显.</p>
 <figure>
-    <img src="/blog/source/figure/posts/Lotka-Volterra_model/result5.png" alt="Lotka-Volterra 模型模拟结果5">
+    <img src="https://github.com/Louis-wemby/Louis-wemby.github.io/blob/main/blog/source/figure/posts/Lotka-Volterra_model/result5.png?raw=true" alt="Lotka-Volterra 模型模拟结果5">
     <figcaption>初值设为 $(250,50)$ 时的模拟结果.</figcaption>
 </figure>
 
 <figure>
-    <img src="/blog/source/figure/posts/Lotka-Volterra_model/result6.png" alt="Lotka-Volterra 模型模拟结果6">
+    <img src="https://github.com/Louis-wemby/Louis-wemby.github.io/blob/main/blog/source/figure/posts/Lotka-Volterra_model/result6.png?raw=true" alt="Lotka-Volterra 模型模拟结果6">
     <figcaption>初值设为 $(1000,500)$ 时的模拟结果.</figcaption>
 </figure>
 
 <p>改变常微分方程组的参数值，使其均变为原来的两倍，即 $b&#x3D;2$，$d&#x3D;4$，$p&#x3D;r&#x3D;0.02$，此时平衡点仍为 $(200,100)$.</p>
 <p>设初值 $$(x_0,y_0) &#x3D; (250,50)$$.通过与前面结果的对比，可以发现种群数量依然围绕平衡点做周期性振荡，波动幅度（波峰和波谷）不变，但振荡频率更快，周期变小为原来的一半.</p>
 <figure>
-    <img src="/blog/source/figure/posts/Lotka-Volterra_model/result7.png" alt="Lotka-Volterra 模型模拟结果7">
+    <img src="https://github.com/Louis-wemby/Louis-wemby.github.io/blob/main/blog/source/figure/posts/Lotka-Volterra_model/result7.png?raw=true" alt="Lotka-Volterra 模型模拟结果7">
     <figcaption>参数变为原来两倍，初值设为 $(250,50)$ 时的模拟结果.</figcaption>
 </figure>
 
@@ -321,7 +321,7 @@
         },
         tex: {
           inlineMath: [['$', '$'], ['\\(', '\\)']],
-          tags: 'all',
+          tags: 'none',
           packages: {
             '[+]': [
               'mhchem'
