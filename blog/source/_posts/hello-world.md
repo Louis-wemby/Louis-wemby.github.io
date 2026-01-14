@@ -6,7 +6,7 @@ description: Initial 'hello world' file.
 top_img: /figure/posts/hello_world.png
 cover: /figure/posts/hexo.png
 categories:
-  - hello world
+  - Hello World
 tags: 
   - Initial config
 comments: true
