@@ -116,8 +116,8 @@ $$
 
 $$
 \begin{bmatrix}
-b-py & -px \\\\
-ry & rx - d
+b - py- \lambda & -px \\\\
+ry & rx - d - \lambda
 \end{bmatrix} = 0
 \tag{5}
 $$
