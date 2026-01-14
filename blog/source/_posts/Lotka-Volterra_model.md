@@ -29,7 +29,7 @@ comments: true
 动态系统可用微分方程来描述.对于一维的常微分方程如 $\frac{dx}{dt} = f(x)$，其平衡点 ${x^*}$ 满足 $f(x^\ast) = 0$.若 $f'(x^\ast) < 0$，则平衡点是稳定的；若 $f'(x^\ast) > 0$，则平衡点是不稳定的.值得注意的是，若 $f'(x^\ast) = 0$（如下图第二个 stable 处），则需要其他方法判断稳定性.
 
 <figure>
-    <img src="/blog/source/figure/posts/Lotka-Volterra_model/1D_stability.png" alt="一维稳定性判断">
+    <img src="https://github.com/Louis-wemby/Louis-wemby.github.io/blob/mainhttps://github.com/Louis-wemby/Louis-wemby.github.io/blob/main/blog/source/figure/posts/Lotka-Volterra_model/1D_stability.png?raw=true" alt="一维稳定性判断">
     <figcaption>一维动态系统的稳定性判断.</figcaption>
 </figure>
 
@@ -66,7 +66,7 @@ $$
 $$
 
 <figure>
-    <img src="/blog/source/figure/posts/Lotka-Volterra_model/2D_stability.png" alt="二维稳定性判断">
+    <img src="https://github.com/Louis-wemby/Louis-wemby.github.io/blob/mainhttps://github.com/Louis-wemby/Louis-wemby.github.io/blob/main/blog/source/figure/posts/Lotka-Volterra_model/2D_stability.png?raw=true" alt="二维稳定性判断">
     <figcaption>二维动态系统的稳定性判断.</figcaption>
 </figure>
 
@@ -182,21 +182,21 @@ grid on;
 设初值 $$(x_0,y_0) = (200,100)$$，在无扰动的情况下，种群数量保持不变，符合平衡点的特性.（下列所有结果图中，左边为种群数量变化曲线，红色代表猎物，蓝色代表捕食者；右边为相平面轨迹图.）
 
 <figure>
-    <img src="/blog/source/figure/posts/Lotka-Volterra_model/result1.png" alt="Lotka-Volterra 模型模拟结果1">
+    <img src="https://github.com/Louis-wemby/Louis-wemby.github.io/blob/main/blog/source/figure/posts/Lotka-Volterra_model/result1.png?raw=true" alt="Lotka-Volterra 模型模拟结果1">
     <figcaption>初值设为平衡点 $(200,100)$ 时的模拟结果.</figcaption>
 </figure>
 
 任取初值如 $$(x_0,y_0) = (199,99)$$，可见种群数量围绕平衡点做周期性振荡.
 
 <figure>
-    <img src="/blog/source/figure/posts/Lotka-Volterra_model/result2.png" alt="Lotka-Volterra 模型模拟结果2">
+    <img src="https://github.com/Louis-wemby/Louis-wemby.github.io/blob/main/blog/source/figure/posts/Lotka-Volterra_model/result2.png?raw=true" alt="Lotka-Volterra 模型模拟结果2">
     <figcaption>初值设为 $(199,99)$ 时的模拟结果.</figcaption>
 </figure>
 
 再如初值 $$(x_0,y_0) = (10,20)$$，同样可见种群数量围绕平衡点做周期性振荡.
 
 <figure>
-    <img src="/blog/source/figure/posts/Lotka-Volterra_model/result3.png" alt="Lotka-Volterra 模型模拟结果3">
+    <img src="https://github.com/Louis-wemby/Louis-wemby.github.io/blob/main/blog/source/figure/posts/Lotka-Volterra_model/result3.png?raw=true" alt="Lotka-Volterra 模型模拟结果3">
     <figcaption>初值设为 $(10,20)$ 时的模拟结果.</figcaption>
 </figure>
 
@@ -207,7 +207,7 @@ grid on;
 在平衡点附近各自取初值 $$(x_0,y_0) = (202,98)$$，
 
 <figure>
-    <img src="/blog/source/figure/posts/Lotka-Volterra_model/result4.png" alt="Lotka-Volterra 模型模拟结果4">
+    <img src="https://github.com/Louis-wemby/Louis-wemby.github.io/blob/main/blog/source/figure/posts/Lotka-Volterra_model/result4.png?raw=true" alt="Lotka-Volterra 模型模拟结果4">
     <figcaption>初值设为 $(202,98)$ 时的模拟结果.</figcaption>
 </figure>
 
@@ -216,12 +216,12 @@ grid on;
 再分别取$$(x_0,y_0) = (250,50)$$ 和 $$(x_0,y_0) = (1000,500)$$，可见种群数量虽然围绕平衡点做周期性振荡，但振荡幅度差异显著.尤其当偏离平衡位置较远时，振荡幅度可变得极其剧烈，不稳定的性质愈加明显.
 
 <figure>
-    <img src="/blog/source/figure/posts/Lotka-Volterra_model/result5.png" alt="Lotka-Volterra 模型模拟结果5">
+    <img src="https://github.com/Louis-wemby/Louis-wemby.github.io/blob/main/blog/source/figure/posts/Lotka-Volterra_model/result5.png?raw=true" alt="Lotka-Volterra 模型模拟结果5">
     <figcaption>初值设为 $(250,50)$ 时的模拟结果.</figcaption>
 </figure>
 
 <figure>
-    <img src="/blog/source/figure/posts/Lotka-Volterra_model/result6.png" alt="Lotka-Volterra 模型模拟结果6">
+    <img src="https://github.com/Louis-wemby/Louis-wemby.github.io/blob/main/blog/source/figure/posts/Lotka-Volterra_model/result6.png?raw=true" alt="Lotka-Volterra 模型模拟结果6">
     <figcaption>初值设为 $(1000,500)$ 时的模拟结果.</figcaption>
 </figure>
 
@@ -230,7 +230,7 @@ grid on;
 设初值 $$(x_0,y_0) = (250,50)$$.通过与前面结果的对比，可以发现种群数量依然围绕平衡点做周期性振荡，波动幅度（波峰和波谷）不变，但振荡频率更快，周期变小为原来的一半.
 
 <figure>
-    <img src="/blog/source/figure/posts/Lotka-Volterra_model/result7.png" alt="Lotka-Volterra 模型模拟结果7">
+    <img src="https://github.com/Louis-wemby/Louis-wemby.github.io/blob/main/blog/source/figure/posts/Lotka-Volterra_model/result7.png?raw=true" alt="Lotka-Volterra 模型模拟结果7">
     <figcaption>参数变为原来两倍，初值设为 $(250,50)$ 时的模拟结果.</figcaption>
 </figure>
 
