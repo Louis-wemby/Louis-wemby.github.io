@@ -29,7 +29,7 @@ comments: true
 动态系统可用微分方程来描述.对于一维的常微分方程如 $\frac{dx}{dt} = f(x)$，其平衡点 ${x^*}$ 满足 $f(x^\ast) = 0$.若 $f'(x^\ast) < 0$，则平衡点是稳定的；若 $f'(x^\ast) > 0$，则平衡点是不稳定的.值得注意的是，若 $f'(x^\ast) = 0$（如下图第二个 stable 处），则需要其他方法判断稳定性.
 
 <figure>
-    <img src="https://github.com/Louis-wemby/Louis-wemby.github.io/blob/mainhttps://github.com/Louis-wemby/Louis-wemby.github.io/blob/main/blog/source/figure/posts/Lotka-Volterra_model/1D_stability.png?raw=true" alt="一维稳定性判断">
+    <img src="https://github.com/Louis-wemby/Louis-wemby.github.io/blob/main/blog/source/figure/posts/Lotka-Volterra_model/1D_stability.png?raw=true" alt="一维稳定性判断">
     <figcaption>一维动态系统的稳定性判断.</figcaption>
 </figure>
 
@@ -66,7 +66,7 @@ $$
 $$
 
 <figure>
-    <img src="https://github.com/Louis-wemby/Louis-wemby.github.io/blob/mainhttps://github.com/Louis-wemby/Louis-wemby.github.io/blob/main/blog/source/figure/posts/Lotka-Volterra_model/2D_stability.png?raw=true" alt="二维稳定性判断">
+    <img src="https://github.com/Louis-wemby/Louis-wemby.github.io/blob/main/blog/source/figure/posts/Lotka-Volterra_model/2D_stability.png?raw=true" alt="二维稳定性判断">
     <figcaption>二维动态系统的稳定性判断.</figcaption>
 </figure>
 
