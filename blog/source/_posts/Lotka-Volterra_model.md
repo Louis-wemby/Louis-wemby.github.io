@@ -56,7 +56,7 @@ $$
 当
 
 $$
-\text{Det} \mathbf{J}- \lambda \mathbf{I} = 0 \tag{2}
+\mathbf{J}- \lambda \mathbf{I} = 0 \tag{2}
 $$
 
 时，
