@@ -1,7 +1,7 @@
 ---
 title: 动态系统稳定性与 Lotka-Volterra 模型浅略研究
 date: 2026-01-13
-updated: 2026-01-13
+updated: 2026-01-15
 description: A brief discussion about Lotka-Volterra model.
 top_img: https://i.natgeofe.com/n/ee1a256e-5a93-4ddd-891b-6e3fb341cd83/01predators-phenomena.jpg
 cover: https://oaknationalacademy-res.cloudinary.com/image/upload/v1700515161/xvjpxj8bmayxkhjawqkk.png
@@ -33,7 +33,7 @@ comments: true
     <figcaption>一维动态系统的稳定性判断.</figcaption>
 </figure>
 
-而对于二维系统 $\frac{dx}{dt} = f_1(x_1, x_2)$ 和 $\frac{dy}{dt} = f_2(x_1, x_2)$，其平衡点 $(x^\ast, y^\ast)$ 满足 $f_1(x^\ast, y^\ast) = 0$ 和 $f_2(x^\ast, y^\ast) = 0$.通过线性化方法，可以构造类似雅可比矩阵（Jacobian matrix）：
+而对于二维系统 $\frac{d{x_1}}{dt} = f_1(x_1, x_2)$ 和 $\frac{d{x_2}}{dt} = f_2(x_1, x_2)$，其平衡点 $({x_1}^\ast, {x_2}^\ast)$ 满足 $f_1({x_1}^\ast, {x_2}^\ast) = 0$ 和 $f_2({x_1}^\ast, {x_2}^\ast) = 0$.通过线性化方法，可以构造类似于雅可比矩阵（Jacobian matrix）：
 
 $$
 \mathbf{J} - \lambda \mathbf{I} =
