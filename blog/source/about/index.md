@@ -22,11 +22,11 @@ aside: false
         <h2>Louis</h2>
         <div style="font-size: 0.9rem; color: #888; margin-bottom: 15px;">
             <i class="fas fa-dna"></i> Bioinformatics & Comp. Bio<br>
-            <i class="fas fa-university"></i> HUST
+            <i class="fas fa-university"></i> HUST & BGI
         </div>
     </div>
 
-    <div align="center" style="margin-top: 10px;">
+<div align="center" style="margin-top: 10px;">
         <a class="social-icon" href="https://github.com/Louis-wemby" target="_blank" title="GitHub">
             <i class="fab fa-github fa-2x" style="color: #333; margin: 0 10px;"></i>
         </a>
@@ -43,42 +43,6 @@ aside: false
 </div>
 
 <div class="card-widget">
-    <div class="item-headline">
-        <i class="fas fa-bullseye" style="color:#FF9F1C"></i> <span>Research Focus</span>
-    </div>
-    <div style="margin-top: 10px;">
-        {% note flat cyan %}
-        Please check my recent posts for details.
-        {% endnote %}
-        <ul style="padding-left: 20px;">
-            <li><b>Single-cell & Spatial Omics</b></li>
-            <li><b>Comparative Genomics</b></li>
-            <li><b>AI for Science (Biology)</b></li>
-            <li><b>Mathematical Modeling</b></li>
-        </ul>
-    </div>
-</div>
-
-<div class="card-widget">
-    <div class="item-headline">
-        <i class="fas fa-code" style="color:#8A80E6"></i> <span>Tech Stack</span>
-    </div>
-    <div style="margin-top: 15px; text-align: left;">
-        <span class="skill-badge">{% label Python blue %}</span>
-        <span class="skill-badge">{% label R green %}</span>
-        <span class="skill-badge">{% label Bash grey %}</span>
-        <span class="skill-badge">{% label Linux orange %}</span>
-        <br>
-        <span class="skill-badge">{% label scRNA-seq purple %}</span>
-        <span class="skill-badge">{% label Stereo-seq red %}</span>
-        <span class="skill-badge">{% label Machine_Learning yellow %}</span>
-        <span class="skill-badge">{% label Git/Docker grey %}</span>
-    </div>
-</div>
-
-</div> <div class="col-md-8">
-
-<div class="card-widget">
     <h2>👋 Hello, I'm Louis.</h2>
     {% note flat blue %}
     I am a senior at **Huazhong University of Science and Technology (HUST)** majoring in **Bioinformatics**. 
@@ -88,35 +52,66 @@ aside: false
 </div>
 
 <div class="card-widget">
+    <div class="item-headline">
+        <i class="fas fa-bullseye" style="color:#FF9F1C"></i> <span>Research Focus</span>
+    </div>
+    <div style="margin-top: 10px;">
+        <ul style="padding-left: 20px;">
+            <li><b>Single-cell & Spatial Omics</b></li>
+            <li><b>Comparative Genomics</b></li>
+            <li><b>AI for Science (Biology)</b></li>
+            <li><b>Mathematical Modeling</b></li>
+        </ul>
+        {% note flat cyan %}
+        Please check my recent posts for details.
+        {% endnote %}
+    </div>
+</div>
+
+<div class="card-widget">
+    <div class="item-headline">
+        <i class="fas fa-code" style="color:#8A80E6"></i> <span>Tech Stack</span>
+    </div>
+    <div style="margin-top: 15px; text-align: left; line-height: 2;">
+        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
+        <img src="https://img.shields.io/badge/R-276DC3?style=flat-square&logo=r&logoColor=white" alt="R">
+        <img src="https://img.shields.io/badge/Bash-4EAA25?style=flat-square&logo=gnu-bash&logoColor=white" alt="Bash">
+        <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" alt="Linux">
+        <br>
+        <img src="https://img.shields.io/badge/scRNA--seq-9966CC?style=flat-square" alt="scRNA-seq">
+        <img src="https://img.shields.io/badge/Stereo--seq-FF4B4B?style=flat-square" alt="Stereo-seq">
+        <img src="https://img.shields.io/badge/Machine_Learning-FFD700?style=flat-square&logo=scikit-learn&logoColor=black" alt="ML">
+        <img src="https://img.shields.io/badge/Git%2FDocker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Git/Docker">
+    </div>
+</div>
+
+</div> <div class="col-md-8">
+
+
+<div class="card-widget">
     <h2>🧪 Research Experience</h2>
 
-    {% note modern red %}
-    ### 🐦 Heterogeneity Between Bird Retinas (Ongoing)
-    **Role:** Intern @ BGI & Graduation Thesis
+### 🐦 Heterogeneity Between Bird Retinas (Ongoing)
+**Role:** Intern @ BGI & Graduation Thesis
     
-    Investigating cellular heterogeneity in avian visual systems using spatial transcriptomics.
-    * **Stereo-seq Analysis:** Processing high-resolution spatial transcriptomics data.
-    * **Image Processing:** Implemented cell segmentation and registration algorithms.
-    * **Network Analysis:** Constructing Cell-Cell Communication networks to understand unique pathways.
-    {% endnote %}
+Investigating cellular heterogeneity in avian visual systems using spatial transcriptomics.
+* **Stereo-seq Analysis:** Processing high-resolution spatial transcriptomics data.
+* **Image Processing:** Implemented cell segmentation and registration algorithms.
+* **Network Analysis:** Constructing Cell-Cell Communication networks to understand unique pathways.
 
-    {% note modern orange %}
-    ### 🧬 Genomic Evolution Analysis
-    **Role:** Intern @ BGI
+### 🧬 Genomic Evolution Analysis
+**Role:** Intern @ BGI
     
-    Participated in a large-scale primate genome evolution project.
-    * Performed **variant filtering** and phylogenetic tree reconstruction.
-    * Handled TB-level genomic data on **Linux HPC clusters**.
-    {% endnote %}
+Participated in a large-scale primate genome evolution project.
+* Performed **variant filtering** and phylogenetic tree reconstruction.
+* Handled TB-level genomic data on **Linux HPC clusters**.
 
-    {% note modern green %}
-    ### 🧫 Lactic Acid Bacteria Genomics
+### 🧫 Lactic Acid Bacteria Genomics
     
-    Explored the genomic features of multiple bacterial strains.
-    * Constructed **gene copy-number matrices**.
-    * Applied **Random Forest** models to identify phylogenetically informative marker genes.
-    * Analyzed correlation between genomic features and ANI-based distances.
-    {% endnote %}
+Explored the genomic features of multiple bacterial strains.
+* Constructed **gene copy-number matrices**.
+* Applied **Random Forest** models to identify phylogenetically informative marker genes.
+* Analyzed correlation between genomic features and ANI-based distances.
 </div>
 
 <div class="card-widget">
