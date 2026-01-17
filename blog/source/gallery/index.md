@@ -10,6 +10,7 @@ comments: true
 <div class="gallery-group-main">
 {% galleryGroup SPURS 'A die-hard Spurs fan' '/gallery/SPURS' /figure/gallery/SPURS/SPURS-banner.jpg %}
 {% galleryGroup Travel 'Embrace the world around you' '/gallery/Travel' /figure/gallery/Travel/Travel-banner.jpg %}
+{% galleryGroup Jujingyi '🍊' '/gallery/Jujingyi' /figure/gallery/Jujingyi/Jujingyi-banner.jpg %}
 <div style="clear: both;"><div>
 
 **Pictures reflect one's preferences**
