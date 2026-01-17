@@ -2,16 +2,16 @@
 title: Jujingyi
 permalink: /gallery/Jujingyi/
 date: 2026-01-17
-top_img: /figure/gallery/Jujingyi/Jujingyi-banner.jpg
+top_img: /figure/gallery/Jujingyi/Jujingyi-banner.png
 aside: false
 ---
 
 ![](https://scontent-lax7-1.cdninstagram.com/v/t51.82787-15/616589112_18544442959018762_463936279292151343_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=1&ig_cache_key=MzgxMjAzOTg5NTQ5NDAwNjkzNg%3D%3D.3-ccb7-5&ccb=7-5&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjE0NDB4MTkyMC5zZHIuQzMifQ%3D%3D&_nc_ohc=TUVVaSbKrNUQ7kNvwFV67Rn&_nc_oc=AdnfL7t6ytAxP_IbI3FcQJcvmx94xsxp1qIdLqZqGIGhPORY2EPDMnBr5ugMV4xxrXw&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent-lax7-1.cdninstagram.com&_nc_gid=rwvCe-1IPFFxViRkcif76g&oh=00_Afr4tlZ93HPu5L97DupDTUkDu43muGfUnbTB9OCpLwBrOg&oe=69717DDA)
-![](/figure/gallery/Jujingyi/image-0.jpg)
-![](/figure/gallery/Jujingyi/image-1.jpg)
-![](/figure/gallery/Jujingyi/image-2.jpg)
-![](/figure/gallery/Jujingyi/image-3.jpg)
-![](/figure/gallery/Jujingyi/image-4.jpg)
-![](/figure/gallery/Jujingyi/image-5.jpg)
-![](/figure/gallery/Jujingyi/image-6.jpg)
-![](/figure/gallery/Jujingyi/image-7.jpg)
+![](/figure/gallery/Jujingyi/image0.png)
+![](/figure/gallery/Jujingyi/image1.png)
+![](/figure/gallery/Jujingyi/image2.png)
+![](/figure/gallery/Jujingyi/image3.png)
+![](/figure/gallery/Jujingyi/image4.png)
+![](/figure/gallery/Jujingyi/image5.png)
+![](/figure/gallery/Jujingyi/image6.png)
+![](/figure/gallery/Jujingyi/image7.png)
