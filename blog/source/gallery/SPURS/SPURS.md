@@ -65,6 +65,7 @@ aside: false
 ![Wemby: Three (the 50 pts game)](https://library.sportingnews.com/styles/twitter_card_120x120/s3/2024-11/Victor%20Wembanyama%20111424.jpeg?itok=X-_J7f3Y)
 ![Wemby: Dunk on Draymond](https://s.hdnux.com/photos/01/55/21/22/28644499/3/1920x0.jpg)
 ![Fox Dunk](https://pbs.twimg.com/media/G8eDXf7WEAAxqQ3?format=jpg&name=4096x4096)
+![CB](https://pbs.twimg.com/media/HAIAQ82XUAAS1hY?format=jpg&name=4096x4096)
 ![](https://pbs.twimg.com/media/G9RacxoWgAAm5J_?format=jpg&name=4096x4096)
 ![](https://pbs.twimg.com/media/G65nuZ1XMAAC-g7?format=jpg&name=4096x4096)
 ![Devin Jumpshot](https://pbs.twimg.com/media/G7c0FmAXMAApNWZ?format=jpg&name=4096x4096)
