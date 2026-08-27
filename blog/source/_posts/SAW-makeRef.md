@@ -1,13 +1,13 @@
 ---
 title: 构建 SAW 分析参考索引
 date: 2026-01-12
-updated: 2026-01-12
+updated: 2026-08-27T19:55:25+08:00
 description: SAW-ST-V8 make reference.
 top_img: https://www.vangoghgallery.com/img/starry_night_full.jpg
-cover: https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/29/1/10.1093_bioinformatics_bts635/3/m_bioinformatics_29_1_15_f2.jpeg?Expires=1771021321&Signature=fqt36-Ujsft5yhbtrBM0IVIOgNYIJdnH2nPfHkwb~JZD1RMAQ-Khdm6Qkf6X2m~MbpxQ4D~otvV37upgiKEy7dCA5r5wky4G9PL84IZxKK08t6oBzY1w-LB-gjzFS1gg4RMojlD~WYIgMjkBFkcAWdrrY3ZcoL1NwCkURaodOQbVmyn80P4SD89j3F9ylCvcKp6Dgn3Nj1yLcqgvxu9s-Rgs4cvbsJRWHSxHqpo0JmjtDDyFkzvDXHpwxsMaF60BvwMpvw5hMGBH0D2tBWm7Z~5jOkdpv0QySk~WoALpsNsgJndzXFF3jftYEyqN4h7fyDBN6DJREleM5lyhTwM2ow__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA
+cover: https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/bioinformatics/29/1/10.1093_bioinformatics_bts635/3/m_bioinformatics_29_1_15_f2.jpeg?Expires=1789500548&Signature=WDfwxzbaq7Q~vUjqV5E9vn1-b6y-OOjypVVpTORHBDOhc52T8cmZx5ryt0S7VL5xOmyY7gld7vIzHaxEgIP08zHqoVWZ9AHKVBdACpe77Jtj8OqF9med3DmxwjoXWsekg0alUlR2VC8U~7-yTRKXbbhFJOykm5vfvKkGHCALF1j5sGpU1WNI1zwNAccJbfjvq44Jy8m6B5D6xjfMg0eoUA4SXl456GlQChZWUNHcWXswfmnGsDQ~B2GcfkT4E3mVwMuo2WYZmY4JUKlvK9JYj1cHi5~D0CBUOeowH1xs1PGafRm5ul0gS6Ku-DeGfSy7LsclcflSHxQcKbHaXg~YbQ__&Key-Pair-Id=APKAIE5G5CRDK6RD3PGA
 categories:
   - Tutorial
-tags: 
+tags:
   - BGI
   - Stereo-seq
   - Genomics
