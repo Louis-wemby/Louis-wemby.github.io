@@ -1,5 +1,5 @@
 # My Website
-Hey guys, I am Louis, a college studnet. This is my **Personal Website** 🍊
+Hey guys, I am Louis, a college student. This is my **Personal Website** 🍊
 ![Selfie](/blog/source/figure/about-banner.jpg "Selfie")
 
 ## 🔗 Link
