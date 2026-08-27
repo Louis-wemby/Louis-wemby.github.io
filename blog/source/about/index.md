@@ -45,8 +45,8 @@ aside: false
 <div class="card-widget">
     <h2>👋 Hello, I'm Louis.</h2>
     {% note flat blue %}
-    I am a senior at **Huazhong University of Science and Technology (HUST)** majoring in **Bioinformatics**. 
-    
+    I graduated Huazhong University of Science and Technology (HUST)** majoring in **Bioinformatics**.
+
     My passion lies in decoding the "Language of Life" through **computational approaches** and **single-cell analysis**. This blog serves as my digital garden where I cultivate knowledge, document workflows, and share slices of my life.
     {% endnote %}
 </div>
@@ -93,7 +93,7 @@ aside: false
 
 ### 🐦 Heterogeneity Between Bird Retinas (Ongoing)
 **Role:** Intern @ BGI & Graduation Thesis
-    
+
 Investigating cellular heterogeneity in avian visual systems using spatial transcriptomics.
 * **Stereo-seq Analysis:** Processing high-resolution spatial transcriptomics data.
 * **Image Processing:** Implemented cell segmentation and registration algorithms.
@@ -101,13 +101,13 @@ Investigating cellular heterogeneity in avian visual systems using spatial trans
 
 ### 🧬 Genomic Evolution Analysis
 **Role:** Intern @ BGI
-    
+
 Participated in a large-scale primate genome evolution project.
 * Performed **variant filtering** and phylogenetic tree reconstruction.
 * Handled TB-level genomic data on **Linux HPC clusters**.
 
 ### 🧫 Lactic Acid Bacteria Genomics
-    
+
 Explored the genomic features of multiple bacterial strains.
 * Constructed **gene copy-number matrices**.
 * Applied **Random Forest** models to identify phylogenetically informative marker genes.
