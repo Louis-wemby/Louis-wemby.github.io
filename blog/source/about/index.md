@@ -45,7 +45,7 @@ aside: false
 <div class="card-widget">
     <h2>👋 Hello, I'm Louis.</h2>
     {% note flat blue %}
-    I graduated Huazhong University of Science and Technology (HUST)** majoring in **Bioinformatics**.
+    I graduated from Huazhong University of Science and Technology (HUST)** majoring in **Bioinformatics**.
 
     My passion lies in decoding the "Language of Life" through **computational approaches** and **single-cell analysis**. This blog serves as my digital garden where I cultivate knowledge, document workflows, and share slices of my life.
     {% endnote %}
