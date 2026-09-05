@@ -1,7 +1,7 @@
 ---
 title: Posters for Landscape
 date: 2026-09-05 15:19:56
-top_img: https://github.com/Louis-wemby/Louis-wemby.github.io/blob/main/blog/source/figure/posts/Posters_for_Landscape/Kyoto_Gion.jpeg?raw=true
+top_img: https://github.com/Louis-wemby/Louis-wemby.github.io/blob/main/blog/source/figure/posts/Posters_for_Landscape/Kyoto_Tenruji.jpeg?raw=true
 cover: https://github.com/Louis-wemby/Louis-wemby.github.io/blob/main/blog/source/figure/posts/Posters_for_Landscape/Nagoya_Oasis21.png?raw=true
 categories:
   - Creation
