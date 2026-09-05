@@ -30,7 +30,7 @@ I applied these prompts to generate several posters for pictures taken during my
 </figure>
 
 <figure>
-    <img src="https://github.com/Louis-wemby/Louis-wemby.github.io/blob/main/blog/source/figure/posts/Posters_for_Landscape/Osaka_Shinsekai.jpeg?raw=true" alt="Osaka Tsutenkaku">
+    <img src="https://github.com/Louis-wemby/Louis-wemby.github.io/blob/main/blog/source/figure/posts/Posters_for_Landscape/Osaka_Shinsekai.png?raw=true" alt="Osaka Tsutenkaku">
     <figcaption>Tsutenkaku's night view. Osaka</figcaption>
 </figure>
 
@@ -79,7 +79,7 @@ I applied these prompts to generate several posters for pictures taken during my
 </figure>
 
 <figure>
-    <img src="https://github.com/Louis-wemby/Louis-wemby.github.io/blob/main/blog/source/figure/posts/Posters_for_Landscape/Nagoya_Oasis21.jpeg?raw=true" alt="Osasis 21">
+    <img src="https://github.com/Louis-wemby/Louis-wemby.github.io/blob/main/blog/source/figure/posts/Posters_for_Landscape/Nagoya_Oasis21.png?raw=true" alt="Osasis 21">
     <figcaption>Night view of Oasis 21, a modern facility consisting of rooftop "Spaceship-Aqua" and Field of Green on the ground and stores in the basement. It is also a photo spot where many young girls gather for shooting videos and practicing dance, one of them told me. Nagoya</figcaption>
 </figure>
 
