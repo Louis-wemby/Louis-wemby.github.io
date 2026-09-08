@@ -2,7 +2,7 @@
 title: Single-cell Analysis Tutorial in 2026
 date: 2026-09-08 02:11:43
 description: Probably the best tutorial on analyzing Stereo-seq data.
-top-img: https://www.genengnews.com/wp-content/uploads/2022/05/Screen-Shot-2022-05-04-at-9.29.54-PM.png
+top_img: https://www.genengnews.com/wp-content/uploads/2022/05/Screen-Shot-2022-05-04-at-9.29.54-PM.png
 categories:
   - Tutorial
 tags:
