@@ -15,6 +15,8 @@ tags:
 
 The rise of spatial transcriptomics has greatly impacted the way people analyze tissues and cells. In the era of AI and intelligent agents, bioinformatics workflows can often be executed without writing a single line of code. However, understanding the underlying mechanisms and analytical steps remains essential. To bridge this gap, I've still complied this foundational guide to single-cell and spatial transcriptomics analysis.
 
+**Note**: It is recommended to read in your computer's browser (like Chrome), as the embedded pdf might not be supported on mobile devices.
+
 <!-- <embed src="/pdf/cell_clustering.pdf" type="application/pdf" width="100%" height="600px" /> -->
 <iframe src="/pdf/cell_clustering.pdf" width="100%" height="600px" style="border: none;"></iframe>
 
