@@ -22,9 +22,9 @@
             
             <tag> Single Cell </tag>
             
-            <tag> Python </tag>
-            
             <tag> Spatial Transcriptomics </tag>
+            
+            <tag> Python </tag>
             
         </tags>
       
@@ -188,13 +188,13 @@
       
         <tags>
             
-            <tag> Spatial Transcriptomics </tag>
-            
             <tag> BGI </tag>
             
             <tag> Stereo-seq </tag>
             
             <tag> Genomics </tag>
+            
+            <tag> Spatial Transcriptomics </tag>
             
         </tags>
       
