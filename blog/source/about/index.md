@@ -1,6 +1,6 @@
 ---
 title: About Me
-date: 2026-01-07 13:56:12
+date: 2026-11-03T17:28:20+08:00
 top_img: /figure/about-banner.jpg
 aside: false
 ---
@@ -21,8 +21,8 @@ aside: false
         <img src="https://github.com/Louis-wemby/Louis-wemby.github.io/blob/main/blog/source/figure/about/avatar.jpg?raw=true" width="140" style="border-radius:50%; margin-bottom:15px; border: 4px solid #f0f0f0;" />
         <h2>Louis</h2>
         <div style="font-size: 0.9rem; color: #888; margin-bottom: 15px;">
-            <i class="fas fa-dna"></i> Bioinformatics & Comp. Bio<br>
-            <i class="fas fa-university"></i> HUST & BGI
+            <i class="fas fa-dna"></i> Bioinformatics & Oncology<br>
+            <i class="fas fa-university"></i> The University of Hong Kong
         </div>
     </div>
 
@@ -30,7 +30,7 @@ aside: false
         <a class="social-icon" href="https://github.com/Louis-wemby" target="_blank" title="GitHub">
             <i class="fab fa-github fa-2x" style="color: #333; margin: 0 10px;"></i>
         </a>
-        <a class="social-icon" href="mailto:didarhossain837463@gmail.com" title="Email">
+        <a class="social-icon" href="mailto:xiongyihan@connect.hku.hk" title="Email">
             <i class="fas fa-envelope fa-2x" style="color: #d44638; margin: 0 10px;"></i>
         </a>
         <a class="social-icon" href="https://x.com/Louis_SPURSfan" target="_blank" title="X (Twitter)">
@@ -39,13 +39,16 @@ aside: false
         <a class="social-icon" href="https://www.instagram.com/looouis21" target="_blank" title="Instagram">
             <i class="fab fa-instagram fa-2x" style="color: #E1306C; margin: 0 10px;"></i>
         </a>
+        <a class="social-icon" href="https://www.linkedin.com/in/louis-xiong" target="_blank" title="LinkedIn">
+            <i class="fab fa-linkedin fa-2x" style="color: #0077B5; margin: 0 10px;"></i>
+        </a>
     </div>
 </div>
 
 <div class="card-widget">
     <h2>👋 Hello, I'm Louis.</h2>
     {% note flat blue %}
-    I graduated from **Huazhong University of Science and Technology (HUST)**, with a Bachelor degree of Engineering (major in **Bioinformatics**).
+    I got my Bachelor degree of Engineering from **Huazhong University of Science and Technology (HUST)** (major in **Bioinformatics**). I will commence my postgraduate study at LKS Faculty of Medicine, The University of Hong Kong, as an MPhil student.
 
     My passion lies in decoding the "Language of Life" through **computational approaches** and **single-cell analysis**. This blog serves as my digital garden where I cultivate knowledge, document workflows, and share slices of my life.
     {% endnote %}
@@ -119,8 +122,9 @@ Explored the genomic features of multiple bacterial strains.
     <div style="display: flex; align-items: center; background: #f9f9f9; padding: 15px; border-radius: 8px; border-left: 5px solid #8A80E6;">
         <i class="fas fa-rocket fa-3x" style="color: #8A80E6; margin-right: 20px;"></i>
         <div>
-            I plan to pursue graduate studies in <b>Computational Biology / Bioinformatics</b>. 
-            <br>My goal is to leverage cutting-edge algorithms to solve complex biological puzzles.
+            I will be conducting postgraduate research at HKU Med, working on cancer biology.
+            <br>
+            My goal is to leverage cutting-edge algorithms to solve complex biological puzzles.
         </div>
     </div>
 </div>
